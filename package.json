@@ -14,7 +14,9 @@
     "react-native",
     "uuid"
   ],
-  "author": "Travis Nuttall",
+  "author": {
+    "name": "Travis Nuttall"
+  },
   "homepage": "https://github.com/Traviskn/react-native-uuid-generator",
   "license": "MIT",
   "peerDependencies": {
