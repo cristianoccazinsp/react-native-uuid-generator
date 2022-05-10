@@ -1,16 +1,15 @@
-import { NativeModules } from 'react-native';
+import {NativeModules} from 'react-native';
 
-const { RNUUIDGenerator } = NativeModules;
+const {RNUUIDGenerator} = NativeModules;
 
 export default {
   getRandomUUID(callback) {
     if (callback) {
       RNUUIDGenerator.getRandomUUID(callback);
-    }
-    else {
+    } else {
       return new Promise((resolve, reject) => {
         RNUUIDGenerator.getRandomUUID(resolve);
       });
     }
-  }
+  },
 };

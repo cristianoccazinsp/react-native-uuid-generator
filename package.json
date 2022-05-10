@@ -1,6 +1,6 @@
 {
   "name": "react-native-uuid-generator",
-  "version": "7.1.0",
+  "version": "7.1.1",
   "description": "A simple wrapper around the native iOS and Android UUID classes for React Native",
   "repository": {
     "type": "git",
@@ -8,6 +8,7 @@
   },
   "main": "index.js",
   "scripts": {
+    "lint": "eslint index.js",
     "test": "echo \"This library has no automated tests. Please use the example app to manually test changes.\" && exit 1"
   },
   "keywords": [
@@ -21,6 +22,10 @@
   "license": "MIT",
   "peerDependencies": {
     "react-native": ">=0.66"
+  },
+  "devDependencies": {
+    "@react-native-community/eslint-config": "3.0.1",
+    "eslint": "7.32.0"
   },
   "files": [
     "android/",
